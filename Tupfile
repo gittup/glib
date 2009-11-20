@@ -1,0 +1,4 @@
+include_rules
+
+: foreach hash.c rbtree.c strdup.c |> !cc |> %B.o
+: *.o |> !ar |> libglib.a
